@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="f4.js"></script>
+    <style>
+        body {
+            padding: 10px 50px;
+        }
+
+        .box {
+            text-align: center;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .form {
+            font-size: 20px;
+        }
+
+        .form input,
+        .form select {
+            width: 50%;
+            padding: 12px 20px;
+            border: 1px solid blue;
+            margin: 14px;
+            border-radius: 4px;
+        }
+
+        .but {
+            border-radius: 9px;
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+            margin: 22px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="head">
+            <h2>Employee Details</h2>
+        </div>
+        <form aciton ="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+            <div class="form">
+                Employee ID: <input type="text" name="employee_id" placeholder="Employee ID">
+            </div>
+            <div class="form">
+                Name: <input type="text" name="name" placeholder="Name">
+            </div>
+            <div class="form">
+                Email: <input type="text" name="email" placeholder="Email">
+            </div>
+            <div class="form">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form">
+                Experience: <input type="text" name="experience">
+            </div>
+            <input class="sub" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
